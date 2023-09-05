@@ -1,24 +1,35 @@
+/* En general */
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
+body {
+  background-image: url("https://img.freepik.com/vector-premium/folleto-diseno-figura-abstracta-fondo-azul-brillante_299644-17748.jpg?w=360");
+  background-size: auto;
+}
+
+/* header */
 
 .navegador {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  height: 45px;
-  padding: 0 60px;
+  height: 50px;
+  padding: 0 100px;
+  margin-top: 20px;
   align-items: center;
+  background: transparent;
 }
+
+/* Nav-logotipo */
 
 .navegador__img {
   height: 100%;
   display: flex;
-  background: #e9c;
   align-items: center;
 }
 
@@ -29,8 +40,319 @@
 
 .navegador__img ul li{
   list-style-type: none;
+  padding-left: 5px;
+  color: #111;
+  font-size: 25px;
 }
 
+/* Nav-listas-del-centro */
+
+.navegador__listas {
+  padding-left:110px;
+}
 .navegador__listas li {
   display: inline-block;
+  padding: 0 10px;
+  font-size: 17px;
+}
+
+.navegador__listas li a {
+  text-decoration: none;
+  color: #111;
+}
+
+/* Nav-botones */
+
+.navegador__botones-login {
+  background: none;
+  color: #111;
+  border: 1px solid #111;
+  border-radius: 20px;
+  height: 40px;
+  width: 110px;
+}
+
+.navegador__botones-singup {
+  background: none;
+  color: #111;
+  border: 1px solid #111;
+  border-radius: 20px;
+  height: 40px;
+  width: 110px;
+}
+
+/* Seccion principal */
+
+.seccion-principal {
+  display: flex;
+  height: 700px;
+}
+
+.seccion-principal__contenido {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #111;
+}
+
+.seccion-principal__contenido h1 {
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+
+.seccion-principal__contenido p {
+  width: 490px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.seccion-principal__imagen {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.seccion-principal__imagen img {
+  width: 550px;
+  height: 450px;
+  border-radius: 5px;
+}
+
+.seccion-principal__boton {
+  width: 70%;
+}
+
+.seccion-principal__boton button {
+  border: none;
+  color: #111;
+  border-radius: 50px;
+  height: 70px;
+  width: 200px;
+  background: linear-gradient(to right,#6295bb, #c43ecb);
+  font-size: 18px;
+}
+
+/* Seccion de los benedicios de IA */
+
+.seccion-de-beneficios {
+  height: 550px;
+}
+
+.seccion-de-beneficios__titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #111;
+}
+
+.seccion-de-beneficios__titulo h2 {
+  font-size: 35px;
+}
+
+.seccion-de-beneficios__titulo p {
+  font-size: 16px;
+}
+
+.seccion-de-beneficios__contenido {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 80px;
+}
+
+.seccion-de-beneficios__contenido-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #111;
+}
+
+.seccion-de-beneficios__contenido-div img {
+  width: 200px;
+  border-radius: 20px;
+}
+
+.seccion-de-beneficios__contenido-div h3 {
+  font-size: 20px;
+  padding-top: 10px;                         
+}
+
+.seccion-de-beneficios__contenido-div p {
+  text-align: center;
+  padding-top: 10px;
+  line-height: 1.3;
+}
+
+/* Seccion de los tipos */
+
+.seccion-tipos {
+  display: flex;
+  justify-content: space-between;
+  height: 600px;
+}
+
+.seccion-tipos__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%; 
+  
+}
+
+.seccion-tipos__img img {
+  width: 500px;
+  height: 450px;
+  border-radius: 100px;
+}
+
+.seccion-tipos__parrafo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #111;
+}
+
+.seccion-tipos__parrafo h2 {
+  font-size: 35px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.seccion-tipos__parrafo p {
+  text-align: left;
+  line-height: 1.5;
+  font-size: 16px;
+  width: 550px;
+  padding-bottom: 20px;
+}
+
+.seccion-tipos__parrafo-boton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.seccion-tipos__parrafo-boton a {
+  padding-right: 40px;
+}
+
+.seccion-tipos__parrafo-boton a button {
+  width: 200px;
+  color: #111;
+  font-size: 18px;
+  font-weight: 900;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(to right,#6295bb, #c43ecb);
+}
+
+/* Seccion de funcionalidad */
+
+.funcionalidad {
+  display: flex;
+  height: 500px;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.funcionalidad__parrafo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #111;
+}
+
+.funcionalidad__parrafo h2 {
+  font-size: 35px;
+  padding-left: 10px;
+}
+
+.funcionalidad__parrafo p {
+  font-size: 16px;
+  line-height: 1.5;
+  padding-left: 10px;
+  padding-top: 20px;
+}
+
+.funcionalidad__img {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.funcionalidad__img img {
+  width: 400px;
+  height: 400px;
+  border-radius: 100%;
+}
+/* Aplicación en el dia a dia */
+
+.aplicaciones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  height: 550px;
+  color: #111;
+}
+
+/* .aplicaciones__titulo {
+} */
+
+.aplicaciones__titulo h2 {
+  font-size: 35px;
+  padding-bottom: 20px;
+}
+
+.aplicaciones__pfila, .aplicaciones__sfila, .aplicaciones__tfila {
+  width: 83%;
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 30px;
+}
+
+.aplicaciones__pfila div, .aplicaciones__sfila div, .aplicaciones__tfila div {
+  height: 60px;
+  width: 240px;
+  display: flex;
+  border: 1px solid #111;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 3px 8px 13px -4px rgba(0, 0, 0, 0.5);
+}
+
+.aplicaciones__pfila div img, .aplicaciones__sfila div img, .aplicaciones__tfila div img {
+  height: 37px;
+  padding-right: 10px;
+}
+
+/* Footer */
+
+.footer {
+  height: 110px;
+  border-top: 1px solid #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  width: 700px;
+}
+
+.footer ul li {
+  font-size: 18px;
 }
